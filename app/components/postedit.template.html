@@ -1,0 +1,113 @@
+<!-- form -->
+<form class="row">
+    <!-- Form col 1 -->
+    <div class="col-6">
+        <div class="row">
+            <div class="form-group col">
+                <label for="exampleInputEmail1">Type</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type de post
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Article</a>
+                        <a class="dropdown-item" href="#">Snippet</a>
+                        <a class="dropdown-item" href="#">lien</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col">
+                <label for="exampleInputEmail1">Séance</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choisir la séance fdp...
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">SEA-001</a>
+                        <a class="dropdown-item" href="#">SEA-002</a>
+                        <a class="dropdown-item" href="#">SEA-003</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputtitle">Titre</label>
+            <input type="email" class="form-control" id="exampleInputtitle" aria-describedby="emailHelp"
+                placeholder="Entre ton titre fada !">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Tags</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Fou des tags connard !">
+        </div>
+        <!-- Post content + toolbar -->
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Contenu du post</label>
+            <br>
+            <app-toolbartextedit></app-toolbartextedit>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+    <!-- Form col 2 -->
+    <div class="col-6" style="height: 100%;">
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+            <!-- Accordion card 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Image 1
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputtitle">Titre de l'image</label>
+                            <input type="email" class="form-control" id="exampleInputtitle" aria-describedby="emailHelp"
+                                placeholder="Entre ton titre fada !">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputtitle">Rentre une balise alt fdp !</label>
+                            <input type="email" class="form-control" id="exampleInputtitle" aria-describedby="emailHelp"
+                                placeholder="Ex: Image de penis">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <button type="button" class="btn btn-outline-danger btn-sm">Supprimer</button>
+                    </div>
+                </div>
+                <!-- Accordion card 1 end -->
+            </div>
+            <!-- Accordion card 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            image 2
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsetwo" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                        terry richardson ad squid.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion card 2 end -->
+        </div>
+        <button type="button" class="btn btn-link">Ajouter une image</button>
+        <!-- Form col 2 end -->
+    </div>
+    <!-- Form end -->
+</form>

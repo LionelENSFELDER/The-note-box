@@ -1,0 +1,94 @@
+<!-- post card template -->
+<div class="card">
+  <div class="card-header bg-transparent">
+    <h5 class="card-title">Post title</h5>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <a href="#" class="badge badge-primary">tag</a>
+    <a href="#" class="badge badge-primary">othertag</a>
+  </div>
+  <img src="/img/img-card.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a href="#" class="badge badge-primary">SEA-001</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#postview">Lire</button>
+    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#postedit">Editer</button>
+    <button type="button" class="btn btn-link">Commenter</button>
+  </div>
+</div>
+
+<!-- Modal postview-->
+<div class="modal fade" id="postview" tabindex="-1" role="dialog" aria-labelledby="postviewTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card">
+          <div class="card-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="card-title">Post title</h5>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="#" class="badge badge-primary">tag</a>
+            <a href="#" class="badge badge-primary">othertag</a>
+          </div>
+          <img src="/img/img-card.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="badge badge-primary">SEA-001</a>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis turpis vitae mauris congue vulputate
+              eget eu augue.
+              Donec aliquet id est vel ullamcorper. Donec commodo euismod leo in imperdiet.
+              Nunc velit magna, rutrum vitae neque id, faucibus feugiat tellus.
+              Aliquam ultricies est laoreet sem efficitur gravida.
+              Nullam quis mattis elit. Vivamus volutpat, lectus vitae ullamcorper commodo,
+              lectus est varius ipsum, sed mollis mauris arcu at nunc. Maecenas dictum luctus ex,
+              ut fringilla nisl auctor sit amet. Morbi non pharetra dui. Donec et efficitur mauris.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Integer ligula ligula, tristique vel mi et, auctor dapibus risus. Nunc egestas sit amet massa in eleifend.
+              Ut viverra, ligula ut tempus commodo, lectus nunc ultricies orci, porttitor dignissim metus sapien et
+              velit.
+              Proin et cursus ligula, quis cursus metus. Donec dignissim ex a placerat faucibus.
+              Quisque dictum magna semper risus sodales, sed convallis dui vulputate.
+              Maecenas eu vehicula ex. Cras in auctor libero, auctor laoreet ex.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <button type="button" class="btn btn-link">Editer</button>
+            <button type="button" class="btn btn-link">Commenter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal postedit -->
+<div class="modal fade" id="postedit" tabindex="-1" role="dialog" aria-labelledby="posteditTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card">
+          <div class="card-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="card-title">Post Edit</h5>
+          </div>
+          <!-- Modal content -->
+          <div class="card-body">
+            <app-postedit></app-postedit>
+          </div>
+          <div class="card-footer text-muted">
+            <button type="button" class="btn btn-link">Sauvegarder</button>
+            <button type="button" class="btn btn-link">Nik sa mère !</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
